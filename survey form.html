@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+
+    <form action="/submit-survey" method="post">
+        <!-- Name input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Age input -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+        <br><br>
+
+        <!-- Gender selection -->
+        <label>Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <!-- Feedback section -->
+        <label for="feedback">Any feedback for us?</label>
+        <br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
